@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YAY! it's BOGO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="container">
+    <main class="wrapper">
+      <header class="title-container">
+        <div class="parent">
+          <div class="title">YAY! it's BOGO</div>
+        </div>
+        <div class="line"></div>
+      </header>
+
+      <article class="items-container">
+        <!-- box which is clickable -->
+        <div class="" id="card1">
+          <div class="accordion-header">
+            <div class="contents">
+              <input
+                type="radio"
+                id="radioButton"
+                name="radioGroup"
+                id="specifyColor"
+                class="card-radio"
+                onclick="toggleCard('card1')"
+              />
+
+              <div class="price-container">
+                <div class="discount-percent">
+                  <div>
+                    <span class="count">1 Unit</span>
+                    <span class="discount">10% Off</span>
+                  </div>
+
+                  <span class="price">Standard price</span>
+                  <div class="specification">
+                    <div class="specification-headers">
+                      <div class="specification-number"></div>
+                      <div class="specification-header">Size</div>
+                      <div class="specification-header">Colour</div>
+                    </div>
+                    <div class="specification-selections">
+                      <div class="specification-number">#1</div>
+                      <div class="specification-select">
+                        <select class="select">
+                          <option class="select">S</option>
+                        </select>
+                        <div class="triangle"></div>
+                      </div>
+                      <div class="specification-select">
+                        <select class="select">
+                          <option>Black</option>
+                        </select>
+                        <div class="triangle"></div>
+                      </div>
+                    </div>
+                    <div class="specification-selections">
+                      <div class="specification-number">#2</div>
+                      <div class="specification-select">
+                        <select class="select">
+                          <option>S</option>
+                        </select>
+                        <div class="triangle"></div>
+                      </div>
+                      <div class="specification-select">
+                        <select class="select">
+                          <option>Blue</option>
+                        </select>
+                        <div class="triangle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="prices">
+                  <span class="price-discount">$10.00 USD</span>
+                  <span class="previous-price"><del>$24.00 USD</del></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="" id="card2">
+          <div class="parent">
+            <div class="trapezium"></div>
+          </div>
+          <div class="parent">
+            <div class="rectangle">MOST POPULAR</div>
+          </div>
+
+          <div class="accordion-header active-accordion-header">
+            <div class="contents">
+              <input
+                type="radio"
+                id="radioButton"
+                name="radioGroup"
+                id="specifyColor"
+                class="card-radio"
+                onclick="toggleCard('card2')"
+                checked
+              />
+
+              <div class="price-container">
+                <div class="discount-percent">
+                  <div>
+                    <span class="count">2 Unit</span>
+                    <span class="discount">20% Off</span>
+                  </div>
+
+                  <span class="price">Standard price</span>
+                  <div class="specification active-specification">
+                    <div class="specification-headers">
+                      <div class="specification-number"></div>
+                      <div class="specification-header">Size</div>
+                      <div class="specification-header">Colour</div>
+                    </div>
+                    <div class="specification-selections">
+                      <div class="specification-number">#1</div>
+                      <div class="specification-select">
+                        <select class="select">
+                          <option class="select">S</option>
+                        </select>
+                        <div class="triangle"></div>
+                      </div>
+                      <div class="specification-select">
+                        <select class="select">
+                          <option>Black</option>
+                        </select>
+                        <div class="triangle"></div>
+                      </div>
+                    </div>
+                    <div class="specification-selections">
+                      <div class="specification-number">#2</div>
+                      <div class="specification-select">
+                        <select class="select">
+                          <option>S</option>
+                        </select>
+                        <div class="triangle"></div>
+                      </div>
+                      <div class="specification-select">
+                        <select class="select">
+                          <option>Blue</option>
+                        </select>
+                        <div class="triangle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="prices">
+                  <span class="price-discount">$10.00 USD</span>
+                  <span class="previous-price"><del>$24.00 USD</del></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="" id="card3">
+          <div class="accordion-header">
+            <div class="contents">
+              <input
+                type="radio"
+                id="radioButton"
+                name="radioGroup"
+                id="specifyColor"
+                class="card-radio"
+                onclick="toggleCard('card3')"
+              />
+
+              <div class="price-container">
+                <div class="discount-percent">
+                  <div>
+                    <span class="count">3 Unit</span>
+                    <span class="discount">30% Off</span>
+                  </div>
+
+                  <span class="price">Standard price</span>
+                  <div class="specification">
+                    <div class="specification-headers">
+                      <div class="specification-number"></div>
+                      <div class="specification-header">Size</div>
+                      <div class="specification-header">Colour</div>
+                    </div>
+                    <div class="specification-selections">
+                      <div class="specification-number">#1</div>
+                      <div class="specification-select">
+                        <select class="select">
+                          <option class="select">S</option>
+                        </select>
+                        <div class="triangle"></div>
+                      </div>
+                      <div class="specification-select">
+                        <select class="select">
+                          <option>Black</option>
+                        </select>
+                        <div class="triangle"></div>
+                      </div>
+                    </div>
+                    <div class="specification-selections">
+                      <div class="specification-number">#2</div>
+                      <div class="specification-select">
+                        <select class="select">
+                          <option>S</option>
+                        </select>
+                        <div class="triangle"></div>
+                      </div>
+                      <div class="specification-select">
+                        <select class="select">
+                          <option>Blue</option>
+                        </select>
+                        <div class="triangle"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="prices">
+                  <span class="price-discount">$10.00 USD</span>
+                  <span class="previous-price"><del>$24.00 USD</del></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="summary">
+          <div style="color: #ff6b82">Free Delivery</div>
+          <div>Total: $18.00 USD</div>
+        </div>
+        <div class="add-to-cart">
+          <span class="plus">+</span>
+          Add to Cart
+        </div>
+        <div class="footer">@ Powered by Pumper</div>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
